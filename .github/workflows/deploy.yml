@@ -24,7 +24,7 @@ jobs:
       - name: Run tests and generate results
         run: |
           cd pythoncalu  # Change to the project's root directory
-          pytest --junitxml=test_results/report.xml tests/
+          pytest --junitxml=test_results/report_test.xml tests/
 
       - name: Upload test results
         uses: actions/upload-artifact@v2
